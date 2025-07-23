@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'Jorint_Mover1.axis1', 'Joint_Mover2.axis1', 'Joint_Mover1.axis2', 'Joint_Mover2.axis2', 'Joint_Mover1.axis3', 'Joint_Mover2.axis3', 'Joint_Mover1.axis4', 'Joint_Mover2.axis4', ]

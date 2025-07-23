@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Design2_URDF1">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="7.77552285313732E-06 -1.69842184760682E-09 -0.115856256969532"
+        rpy="0 0 0" />
+      <mass
+        value="31.4788377167438" />
+      <inertia
+        ixx="4.89103024628363"
+        ixy="0.00034064408531168"
+        ixz="-2.42692419521412E-05"
+        iyy="6.68859591272049"
+        iyz="-1.20305741955873E-10"
+        izz="3.14797684055325" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link_Mover1.axis1">
+    <inertial>
+      <origin
+        xyz="0.0357215911718378 0.000393315685542905 -3.75316749767762E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.145088633428799" />
+      <inertia
+        ixx="0.000111475094518422"
+        ixy="-3.28817350187451E-06"
+        ixz="-1.88615816658921E-08"
+        iyy="0.000122125993810361"
+        iyz="6.00938334133986E-09"
+        izz="0.000169211962599875" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover1.axis1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover1.axis1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Jorint_Mover1.axis1"
+    type="prismatic">
+    <origin
+      xyz="0.26431 0.2821 0.39528"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_Mover1.axis1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link_Mover2.axis1">
+    <inertial>
+      <origin
+        xyz="0.0357222087653524 0.000393495955632872 -3.76842647886733E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.145090014350478" />
+      <inertia
+        ixx="0.000111475472699915"
+		ixy="-3.28986976781675E-06"
+        iyy="0.000122131785874611"
+        iyz="6.0508518805303E-09"
+        izz="0.000169218366002444" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover2.axis1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+      xyz="0.26431 0.2821 0.078473"
+      rpy="0 0 0" />
+    </visual>  
+    <parent
+      link="base_link" />
+    <child
+      link="Link_Mover2.axis1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link_Mover1.axis2">
+    <inertial>
+      <origin
+        xyz="0.0357215911299953 0.00039331573578183 -3.75320022572012E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.145088633860156" />
+      <inertia
+        ixx="0.000111475094711921"
+        ixy="-3.28817336714939E-06"
+        ixz="-1.88616657107814E-08"
+        iyy="0.000122125994007448"
+        iyz="6.00947123353196E-09"
+        izz="0.000169211962882183" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover1.axis2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover1.axis2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Mover1.axis2"
+    type="prismatic">
+    <origin
+      xyz="0.26436 -0.2788 0.17645"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_Mover1.axis2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link_Mover2.axis2">
+    <inertial>
+      <origin
+        xyz="0.0357222087653986 0.000393495955375744 -3.76842676819145E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.145090014350477" />
+      <inertia
+        ixx="0.000111475472699914"
+        ixy="-3.28986976781528E-06"
+        ixz="-1.86883622497356E-08"
+        iyy="0.00012213178587461"
+        iyz="6.05085188040552E-09"
+        izz="0.000169218366002443" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover2.axis2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover2.axis2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Mover2.axis2"
+    type="prismatic">
+    <origin
+      xyz="0.26431 -0.2788 0.0055681"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_Mover2.axis2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link_Mover1.axis3">
+    <inertial>
+      <origin
+        xyz="-0.0357215912080666 -0.000393315649787063 -3.75314275347094E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.14508863311794" />
+      <inertia
+        ixx="0.00011147509436892"
+        ixy="-3.28817360039239E-06"
+        ixz="1.88615193151173E-08"
+        iyy="0.000122125993667216"
+        iyz="-6.00931475461585E-09"
+        izz="0.000169211962393422" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover1.axis3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover1.axis3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Mover1.axis3"
+    type="prismatic">
+    <origin
+      xyz="-0.26431 -0.2821 -0.23642"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_Mover1.axis3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link_Mover2.axis3">
+    <inertial>
+      <origin
+        xyz="-0.035722208798179 -0.000393495924419174 -3.76840718074867E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.145090014110246" />
+      <inertia
+        ixx="0.000111475472585015"
+        ixy="-3.28986984402597E-06"
+        ixz="1.86883140551166E-08"
+        iyy="0.000122131785763703"
+        iyz="-6.05079907523453E-09"
+        izz="0.00016921836584362" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover2.axis3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover2.axis3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Mover2.axis3"
+    type="prismatic">
+    <origin
+      xyz="-0.26431 -0.2821 -0.414"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_Mover2.axis3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link_Mover1.axis4">
+    <inertial>
+      <origin
+        xyz="-0.0357215912077704 -0.000393315649558357 -3.75314274836391E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.145088633117937" />
+      <inertia
+        ixx="0.000111475094368916"
+        ixy="-3.28817360039385E-06"
+        ixz="1.88615193146689E-08"
+        iyy="0.000122125993667212"
+        iyz="-6.00931475267959E-09"
+        izz="0.000169211962393415" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover1.axis4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover1.axis4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Mover1.axis4"
+    type="prismatic">
+    <origin
+      xyz="-0.26261 0.2771 0.18561"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_Mover1.axis4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link_Mover2.axis4">
+    <inertial>
+      <origin
+        xyz="-0.0357222087969467 -0.000393495924414289 -3.76840718152582E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.145090014110244" />
+      <inertia
+        ixx="0.000111475472585014"
+        ixy="-3.28986984402771E-06"
+        ixz="1.86883140638181E-08"
+        iyy="0.000122131785763703"
+        iyz="-6.05079907565868E-09"
+        izz="0.000169218365843617" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover2.axis4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_Mover2.axis4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_Mover2.axis4"
+    type="prismatic">
+    <origin
+      xyz="-0.26271 0.2788 -0.38134"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link_Mover2.axis4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Link_end.effector">
+    <inertial>
+      <origin
+        xyz="1.11022302462516E-16 0 -0.004"
+        rpy="0 0 0" />
+      <mass
+        value="0.0912632665867837" />
+      <inertia
+        ixx="6.32479144763635E-05"
+        ixy="-2.86928274979317E-21"
+        ixz="-1.6418175689775E-23"
+        iyy="6.32479144763635E-05"
+        iyz="1.62347489887783E-21"
+        izz="0.000102621048443149" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_end.effector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Design2_URDF1/meshes/Link_end.effector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Joint_end.effector" type="fixed">
+  	<origin xyz="-2.0425 2.0192 -0.09618" rpy="0 0 0" />
+  	<parent link="base_link" />
+  	<child link="Link_end.effector" />
+  </joint>
+</robot>
